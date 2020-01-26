@@ -1,0 +1,67 @@
+$small: 0.8rem;
+$medium: 1rem;
+$large: 1.2rem;
+$huge: 60px;
+
+.centered {
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-size: $large;
+  margin-bottom: 30px;
+  span:before {
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 100%;
+    height: 2px;
+    background: #9482ac;
+    content: "";
+  }
+  span:after {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #9482ac;
+    content: "";
+  }
+
+  span {
+    position: relative;
+  }
+}
+
+.header-medium {
+  font-size: $large;
+  margin: 10px 0;
+}
+
+.text-small {
+  font-size: $small;
+}
+
+.text-huge {
+  font-size: 60px;
+}
+
+.bordered {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .text-huge {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-huge {
+    font-size: 30px;
+  }
+}
+// 

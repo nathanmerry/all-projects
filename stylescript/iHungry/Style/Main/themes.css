@@ -1,0 +1,18 @@
+.t-alt {
+  background-color: #cca353;
+  color: white;
+}
+
+.t-hero {
+  background-image: url("../../images/background_search_desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.t-hero__list {
+  border-bottom: 1px solid white;
+}
+
+.t-item__showcase {
+  background-color: black;
+}

@@ -1,0 +1,36 @@
+.theme-main {
+  background-color: white;
+  color: black;
+}
+.theme-hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(238, 238, 238, 0.0001) -7.14%,
+      rgba(0, 0, 0, 0.3) 95%
+    ),
+    url("../../Pictures/hero-image.png");
+  background-size: cover;
+  color: #ffe6e6;
+}
+.theme-alt {
+  background-color: #fafafa;
+}
+.theme-dark {
+  background-color: #3461ad;
+  color: white;
+}
+.light {
+  font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  .theme-hero {
+    background-image: linear-gradient(
+        180deg,
+        #0000004a -7.14%,
+        rgba(0, 0, 0, 0.3) 95%
+      ),
+      url("../../Pictures/hero-image-ipad.png");
+  }
+}
+@media screen and (max-width: 425px) {
+}

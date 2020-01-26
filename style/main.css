@@ -1,0 +1,29 @@
+* {
+  font-family: poppins;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.layout__projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.container {
+  padding: 0 20px;
+}
+.sub-title {
+  margin: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .layout__projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

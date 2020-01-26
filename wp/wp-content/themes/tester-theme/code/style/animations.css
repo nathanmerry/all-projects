@@ -1,0 +1,20 @@
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.a_nav {
+  -webkit-transition: max-height 500ms ease-in-out;
+  -moz-transition: max-height 500ms ease-in-out;
+  -o-transition: max-height 500ms ease-in-out;
+  transition: max-height 500ms ease-in-out;
+}

@@ -1,0 +1,137 @@
+.container {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.c-header {
+  padding: 10px 0;
+}
+
+.c-hero {
+  padding: 10% 0;
+}
+
+.c-hero__row {
+  margin: 15px 0;
+}
+
+.c-hero__list {
+  margin: 0;
+  padding: 0;
+}
+
+.c-hero__list li {
+  margin: 0 20px;
+  width: 70px;
+  text-align: center;
+}
+
+.c-hero__list li a {
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.c-hero__searchbar input {
+  width: 35vw;
+  padding: 3px 7px;
+  font-size: 0.7em;
+}
+
+.c-hero__searchbar .input-one {
+  margin: 1% 2.5% 1% 1%;
+}
+
+.c-hero__searchbar .input-two {
+  margin: 1% 1% 1% 2.5%;
+}
+.c-header--item {
+  padding: 15px 0;
+}
+
+.c-main-content--item {
+  padding: 0 20px;
+}
+
+.c-main-content__sidebar {
+  width: 40%;
+}
+
+.c-main-content__main {
+  width: 60%;
+}
+
+.c-googlemaps-iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.c-item__showcase {
+  width: 13rem;
+  margin: 0 2rem 2rem 2rem;
+  padding: 0 0 0.5rem 0;
+}
+
+.c-showcase__image {
+  margin-bottom: 0.5rem;
+  background: black;
+  height: 13rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.c-showcase__image img {
+  width: 100%;
+}
+
+.c-item__header {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c-item_info_section {
+  line-height: 0.5;
+  font-size: 0.8rem;
+}
+
+.l-align-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .c-hero__searchbar input {
+    width: 45vw;
+  }
+  .c-main-content__sidebar {
+    width: 100%;
+  }
+  .c-main-content__main {
+    width: 100%;
+  }
+  .c-googlemaps-iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .c-hero__list li {
+    margin: 0 16px;
+  }
+
+  .c-hero__searchbar input {
+    width: 80vw;
+  }
+
+  .c-hero__searchbar .input-one {
+    margin: 0 0 2.5% 0;
+  }
+
+  .c-hero__searchbar .input-two {
+    margin: 0;
+  }
+
+}

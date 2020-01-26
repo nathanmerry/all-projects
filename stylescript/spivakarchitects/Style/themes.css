@@ -1,0 +1,79 @@
+body p,
+h2,
+h3,
+li a {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.theme-block {
+  background: #2c2c2c40;
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+}
+
+.theme-block-light {
+  background: white;
+}
+.theme-white,
+.theme-white li a {
+  text-decoration: none;
+  color: white;
+}
+
+.theme-white p {
+  color: #afaaaa;
+}
+.theme-white h3 {
+  color: black;
+}
+.theme-dark,
+.theme-dark li a {
+  text-decoration: none;
+  color: black;
+}
+
+.theme-grey {
+  background-color: #7a787d;
+  color: white;
+}
+.theme-media {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.75;
+}
+
+.t-footer-read-artical {
+  color: #ffffff7a;
+  font-size: 0.8em;
+}
+
+.t-number {
+  letter-spacing: 0.095em;
+}
+
+.t-blinking {
+  animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000;
+  }
+}

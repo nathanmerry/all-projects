@@ -1,0 +1,19 @@
+.is-active {
+  visibility: visible;
+}
+
+.is-inactive {
+  display: none;
+}
+
+.is-active--nav {
+  max-height: 500px;
+}
+
+.is-inactive--nav {
+  height: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}

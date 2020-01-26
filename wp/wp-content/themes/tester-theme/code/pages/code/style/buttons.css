@@ -1,0 +1,48 @@
+.b_nav-toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.b_nav-toggle_bar {
+  width: 25px;
+  height: 4px;
+  background-color: grey;
+  margin: 5px 0 5px 20px;
+  transition: 0.4s;
+  transition: 0.4s;
+}
+
+.b_nav-toggle .grey {
+  background-color: grey;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.b_btn {
+  border: 2px solid #f06626;
+  background: none;
+  color: #f06626;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+.b_btn:hover {
+  color: white;
+  background: #f06626;
+}

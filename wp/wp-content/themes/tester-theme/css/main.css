@@ -1,0 +1,164 @@
+/* Theme Name: Test Theme
+    Author: Nathan Merry
+*/
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-sticky {
+  /* position: sticky; */
+  top: 0;
+  z-index: 99;
+}
+
+.container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header-container {
+  background: white;
+  padding: 3%;
+  /* position: sticky; */
+  top: 0;
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.top-nav li {
+  text-align: center;
+  flex: 1;
+  margin: 0 14px;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  font-size: 1.6em;
+  padding: 2px 0;
+  display: block;
+}
+
+.nav-menu-item-1 {
+  background: black;
+}
+.nav-menu-item-1 a {
+  color: #f06626;
+}
+
+.nav-menu-item-2 {
+  background: #1e73be;
+}
+.nav-menu-item-2 a {
+  color: white;
+}
+
+.nav-menu-item-3 {
+  background: #dd9933;
+}
+.nav-menu-item-3 a {
+  color: black;
+}
+
+.nav-menu-item-4 {
+  background: #8c8c8c;
+}
+.nav-menu-item-4 a {
+  color: white;
+}
+
+.logo-wrapper {
+  max-width: 400px;
+  width: 70%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.btn-nav-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: grey;
+  margin: 5px 0 5px 20px;
+  transition: 0.4s;
+
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.logo-nav-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: white;
+}
+
+.main {
+  padding: 0 4%;
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav li {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .top-nav {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 700ms ease-in;
+    -moz-transition: max-height 700ms ease-in;
+    -o-transition: max-height 700ms ease-in;
+    transition: max-height 700ms ease-in;
+  }
+
+  .top-nav li {
+    width: 100%;
+    margin: 1px 0;
+  }
+}

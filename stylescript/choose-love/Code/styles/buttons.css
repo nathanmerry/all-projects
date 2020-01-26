@@ -1,0 +1,32 @@
+.nav-button {
+  background-color: #f5a623;
+}
+.btn-t-main {
+  background-color: #f5a623;
+  color: white;
+  border: none;
+}
+.btn-t-alt {
+  background-color: white;
+  color: #3461ad;
+  border: none;
+}
+.btn-sz-s {
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.btn-sz-l {
+  font-size: 1em;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.btn-nav-icon {
+  margin: 0 20px 0 0;
+  /* display: none; */
+}
+.btn-nav-icon div {
+  width: 25px;
+  height: 4px;
+  background-color: grey;
+  margin: 5px 0 5px 20px;
+}

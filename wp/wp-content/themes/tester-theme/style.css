@@ -1,0 +1,20 @@
+.faculty-heading {
+    margin-top: 40px;
+}
+
+.faculty .entry-header {
+    margin-bottom: 40px;
+}
+
+.post-type-archive-faculty .content {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .post-type-archive-faculty .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}

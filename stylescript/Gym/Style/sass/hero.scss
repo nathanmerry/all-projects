@@ -1,0 +1,18 @@
+$mainColorA: #9cb3d7;
+$mainColorB: white;
+$transparent: #ffffff00;
+$font-small: 0.8rem;
+
+.hero-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.4s;
+  color: white;
+}
+
+.header-container {
+  background: $mainColorA;
+  border-bottom: 3px solid white;
+}
+
+// 

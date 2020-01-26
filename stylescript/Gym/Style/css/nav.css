@@ -1,0 +1,140 @@
+* {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu, .main-menu--alt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  transition: 0.4s;
+}
+.main-menu--alt {
+  background: #4668d8ed;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  list-style: none;
+}
+.nav .dropdown {
+  list-style: none;
+  background: white;
+  border: 0.5px solid black;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: width 2s;
+  border-radius: 10px;
+  max-height: 0;
+  transition: all 0.4s;
+}
+.nav .dropdown li {
+  padding: 10px 0px 10px 0;
+}
+.nav .dropdown a {
+  font-size: 0.7rem;
+  color: black;
+  padding: 10px 100px 10px 10px;
+}
+.nav .logo-background {
+  background-image: url("../../images/logo-background.png");
+  background-repeat: no-repeat;
+  background-size: 128px 120px;
+  height: 130px;
+  width: 130px;
+  transition: 0.4s;
+}
+.nav .logo-background-noShow {
+  background-image: none;
+  transition: 0.4s;
+}
+.nav .nav-item a {
+  padding: 0 20px;
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+}
+.nav .nav-item a:hover {
+  color: #ff0000;
+}
+.nav .guttering-nav {
+  height: 100px;
+}
+.nav .dropdown-toggle:hover + .dropdown,
+.nav .dropdown:hover {
+  visibility: visible;
+  max-height: 500px;
+}
+.nav .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+@media screen and (max-width: 768px) {
+  .nav .text {
+    width: 150%;
+  }
+  .nav .nav-icon {
+    margin: 0 20px 0 0;
+  }
+  .nav .nav-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .nav .button-1 {
+    display: none;
+  }
+  .nav .no-show, .nav .no-show--invisible, .nav .no-show--visible, .nav .no-show--scroll {
+    display: none;
+    text-align: right;
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    background: white;
+    width: 100%;
+  }
+  .nav .no-show--scroll {
+    top: 60px;
+  }
+  .nav .no-show--visible {
+    display: block;
+  }
+  .nav .no-show--invisible {
+    display: none;
+  }
+  .nav .no-show li, .nav .no-show--scroll li, .nav .no-show--visible li, .nav .no-show--invisible li {
+    padding: 5px;
+  }
+  .nav .no-show a, .nav .no-show--scroll a, .nav .no-show--visible a, .nav .no-show--invisible a {
+    color: black;
+  }
+  .nav .nav .dropdown {
+    display: block;
+    position: relative;
+    margin: 0;
+    text-align: right;
+  }
+  .nav .nav .dropdown a {
+    text-align: right;
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=Nav.css.map */

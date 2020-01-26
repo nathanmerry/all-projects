@@ -1,0 +1,179 @@
+:root {
+  --padding: 10px;
+  --width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: poppins;
+}
+html {
+  height: 100%;
+}
+body {
+  background: skyblue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nav {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.toggle div {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 2px 0;
+}
+
+.toggle:hover {
+  background: orange;
+}
+
+.nav-title {
+  font-size: 0.6em;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.nav-popup {
+  animation-name: example;
+  animation-duration: 0.35s;
+}
+
+.nav-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: orange;
+}
+
+.nav-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+}
+
+.nav-popup ul li {
+  padding: 10px 10px;
+}
+
+.nav-popup ul li:hover {
+  background: rgb(212, 138, 0);
+  cursor: pointer;
+}
+
+.layout__outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.layout__main {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: var(--padding);
+  position: relative;
+}
+.container__main {
+  padding: 30px;
+  width: var(--width) + 10;
+}
+.theme__main {
+  background: #212121;
+}
+.output {
+  text-align: right;
+  font-size: 2em;
+  position: relative;
+  color: white;
+  width: var(--width);
+  overflow: hidden;
+}
+.output p {
+  margin: 0;
+  padding: 0;
+}
+.output .small {
+  font-size: 0.5em;
+  height: 20px;
+}
+.output .large {
+  height: 40px;
+  font-size: 0.7em;
+}
+
+.col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.col-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.algerba {
+  font-family: "Tangerine", cursive;
+  font-size: 2em;
+  position: relative;
+}
+
+.tiny {
+  font-size: 0.6em;
+  position: absolute;
+  left: 23px;
+  bottom: 15px;
+}
+
+.row button {
+  padding: var(--padding);
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  font-size: 1em;
+}
+.light {
+  background-color: lightgrey;
+  color: black;
+}
+.dark {
+  background-color: #565656;
+  color: white;
+}
+.alt {
+  background-color: orange;
+  color: white;
+}
+.large {
+  grid-column: span 2;
+}
+
+.is-inactive {
+  display: none;
+}
+.is-active {
+  visibility: visible;
+}

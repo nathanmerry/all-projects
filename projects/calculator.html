@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../stylescript/calculator/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    <div class="layout__outer">
+      <div class="container__main theme__main layout__main">
+        <div class="nav">
+          <div class="nav-items">
+            <div data-nav-toggle id="js-nav-toggle" class="toggle">
+              <div data-nav-toggle></div>
+              <div data-nav-toggle></div>
+              <div data-nav-toggle></div>
+            </div>
+            <p id="js-title" class="nav-title">Basic Calculator</p>
+          </div>
+          <div id="js-nav-popup" class="nav-popup is-inactive">
+            <ul>
+              <li id="js-item-basic"><a>Basic Calculator</a></li>
+              <li id="js-item-advanced"><a>Advanced Calculator</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="output">
+          <p data-previous-operand class="small"></p>
+          <p data-current-operand class="large" id="text"></p>
+        </div>
+        <div data-btn-container class="col-4 row">
+          <span data-advanced class="is-inactive"></span>
+          <button data-all-clear class="light large">AC</button>
+          <button data-delete class="light">DEL</button>
+          <button data-operation class="alt">÷</button>
+        </div>
+        <div data-btn-container class="col-4 row">
+          <button data-advanced data-sqaure-algebra class="alt is-inactive">
+              <div class="algerba">x<span class="tiny algerba">y</span></div>
+          </button>
+          <button data-number class="dark">7</button>
+          <button data-number class="dark">8</button>
+          <button data-number class="dark">9</button>
+          <button data-operation class="alt">x</button>
+        </div>
+        <div data-btn-container class="col-4 row">
+          <button data-advanced data-squared class="alt is-inactive">
+            <span class="algerba">x²</span>
+          </button>
+          <button data-number class="dark">4</button>
+          <button data-number class="dark">5</button>
+          <button data-number class="dark">6</button>
+          <button data-operation class="alt">-</button>
+        </div>                          
+        <div data-btn-container class="col-4 row">
+          <button data-advanced data-squareroot class="alt is-inactive">√</button>
+          <button data-number class="dark">1</button>
+          <button data-number class="dark">2</button>
+          <button data-number class="dark">3</button>
+          <button data-operation class="alt">+</button>
+          
+        </div>
+        <div data-btn-container class="col-4 row">
+          <button data-advanced data-pi class="alt is-inactive">π</button>
+          <button data-number class="dark">0</button>
+          <button data-number class="dark">.</button>
+          <button data-equals class="alt large">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="../stylescript/calculator/calc-class.js"></script>
+    <script src="../stylescript/calculator/dom-calls.js"></script>
+    <script src="../stylescript/calculator/nav.js"></script>
+  </body>
+</html>

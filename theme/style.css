@@ -1,0 +1,33 @@
+/* Theme Name: Test Theme
+    Author: Nathan Merry
+*/
+
+body {
+  background: grey;
+}
+
+header {
+  background: white;
+  width: 100%;
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li {
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+.top-nav li a {
+}
+
+.header-logo {
+  border: 5px solid purple;
+}

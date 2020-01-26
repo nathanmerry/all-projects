@@ -1,0 +1,50 @@
+<-- Callum Notes -->
+
+# stats countup doesn't work on monitor - a better way to fire the function?
+
+# grid header row expands on montor - find a way to set a cap to the row expansion without setting it grid-template-rows
+
+
+- Look into aria labels and role attribute
+
+- Use BEM properly
+
+- Navigation switch from JS to CSS
+
+- Look into accesabiltiy and semantic html (make sure using things like artical correctly)
+
+- gracefull enhancment
+
+<-- Mum Notes -->
+
+# find out what the process usually is for a user setting up a just giving account
+
+# what is the process for applying to be a volunteer
+
+
+<-- Plan for website -->
+
+    <-- What needs to be done (no particular order)-->
+
+    # fast draft of home page
+        - all done but a couple things (see callum notes)
+
+    # fast draft of all of the pages which have a custom css page
+        - what pages need custom layout?
+
+    # fast draft of generic page layout
+
+    # second draft in all of the above
+
+    # look into linking to justGiving api
+        - charityID
+        -
+
+    # shop section - how am I going to do that?
+
+    # new desgin of the webiste (what needs to be newley desgined?)
+
+    # internal link building for site
+
+
+

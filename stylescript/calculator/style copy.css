@@ -1,0 +1,92 @@
+:root {
+  --text-small: 0.8em;
+  --text-standard: 1.2em;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+body {
+  background: skyblue;
+}
+
+.layout__outer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.layout__main {
+  display: grid;
+  grid-template-columns: repeat(4,60px);
+  grid-template-rows: minmax(60px, auto) repeat(5, 40px);
+  grid-gap: 10px;
+}
+
+.container__main {
+  padding: 10px;
+  background: #282828;
+  border-radius: 20px;
+}
+
+.container__main button {
+  border-radius: 20px;
+  opacity: 0.9;
+  border: 0px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: var(--text-standard);
+}
+
+.container__main button:hover {
+  opacity: 1;
+}
+
+.col-sp4 {
+  grid-column: span 4;
+}
+
+.col-sp2 {
+  grid-column: span 2;
+}
+
+.output {
+  font-size: var(--text-standard);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 5px;
+}
+
+.output .prev-operand {
+  font-size: var(--text-small);
+  color: rgba(255, 255, 255, 0.897);
+}
+
+.output .current-operand {
+  font-size: var(--text-standard);
+}
+
+.light {
+  background-color: lightgrey;
+  color: black;
+}
+
+.main {
+  background-color: #565656;
+  color: white;
+}
+
+.alt {
+  background-color: orange;
+  color: white;
+}

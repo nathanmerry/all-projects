@@ -1,0 +1,78 @@
+.t_nav_item--1 {
+  background: black;
+}
+.t_nav_item--1 a {
+  color: #f06626;
+}
+.t_nav_item--2 {
+  background: #1e73be;
+}
+.t_nav_item--2 a {
+  color: white;
+}
+.t_nav_item--3 {
+  background: #dd9933;
+}
+.t_nav_item--3 a {
+  color: black;
+}
+.t_nav_item--4 {
+  background: #8c8c8c;
+}
+.t_nav_item--4 a {
+  color: white;
+}
+
+.t_link {
+  text-decoration: none;
+}
+
+.t_orange {
+  background-color: #fcdfd1;
+}
+
+.t__card {
+  box-shadow: 0 0 10px #0000001f;
+}
+
+.t_countdown-staging {
+  background-image: linear-gradient(#28303ab5, #28303a),
+    url("../images/homepage/catalyst-logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.t_countdown {
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.t_countdown-stat {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.t_countdown-dsc {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.t_blue {
+  background-color: #28303a;
+  color: white;
+}
+
+.t__link {
+  color: #dd9933;
+}
+
+.t_blue a:hover {
+  color: #ffb648;
+}
+
+.header-top {
+  background: #28303a;
+  padding: 5px 0;
+}

@@ -1,0 +1,37 @@
+:root {
+  --nav_pos-right: 125px;
+}
+@keyframes example {
+  0% {
+    background-color: red;
+    right: 0px;
+  }
+  100% {
+    background-color: red;
+    /* right: var(--nav_pos-right); */
+  }
+}
+.nav-popup-active {
+  right: var(--nav_pos-right);
+  top: 0px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 0.35s;
+}
+.nav-popup-inactive {
+  right: -100px;
+  position: absolute;
+}
+.nav-toggle-active {
+  right: 10px;
+  position: absolute;
+}
+.nav-toggle-inactive {
+  right: -50px;
+  position: absolute;
+}
+@media screen and (min-width: 767px) {
+  .nav-items-inactive {
+    display: none;
+  }
+}

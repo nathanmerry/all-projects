@@ -1,0 +1,155 @@
+@media screen and (min-width: 768px) {
+}
+
+.container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.c_logo-toggle {
+  padding: 3% 0;
+}
+
+.c_nav-guttering {
+  padding: 0 7%;
+}
+
+.c_nav_item {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.c_nav li {
+  text-align: center;
+  flex: 1;
+  margin: 0 14px;
+}
+
+.c_nav li:first-child {
+  margin: 0 10px 0 0;
+}
+
+.c_nav li:last-child {
+  margin: 0 0 0 10px;
+}
+
+.c_nav li a {
+  font-size: 1.6em;
+  padding: 2px 0;
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.c_logo-wrapper {
+  width: 70%;
+  max-width: 400px;
+}
+
+.c_header_nav {
+  padding-bottom: 5%;
+}
+
+.c_side-guttering {
+  padding: 0 7%;
+}
+
+.c_card {
+  padding: 2%;
+  margin: 0 0 30px 0;
+  flex: 1;
+}
+
+.c__item {
+  padding: 4% 0;
+}
+
+.c_card-bottom--left {
+  margin-right: 15px;
+}
+
+.c_card-bottom--right {
+  margin-left: 15px;
+}
+
+.c_countdown {
+  padding: 5%;
+}
+
+.c_countdown-item {
+  padding-bottom: 30px;
+  flex: 1;
+}
+
+.c_countdown_dcs {
+  margin-top: 10px;
+}
+
+.c_contact_item {
+  padding: 5px;
+}
+
+.c__post {
+  padding-bottom: 150px;
+}
+
+.c__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Height of the footer */
+  background: #6cf;
+}
+
+.c__wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.c__footer-inner {
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 768px) {
+  .c_nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .c_nav-guttering {
+    padding: 0%;
+  }
+
+  .c_nav li {
+    margin: 0;
+  }
+
+  .c_nav li:first-child {
+    margin: 0;
+  }
+
+  .c_nav li:last-child {
+    margin: 0;
+  }
+
+  .c_side-guttering {
+    padding: 0 3%;
+  }
+
+  .c_card {
+    padding: 4%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .c_card-bottom--left {
+    margin-right: 0;
+  }
+
+  .c_card-bottom--right {
+    margin-left: 0;
+  }
+}

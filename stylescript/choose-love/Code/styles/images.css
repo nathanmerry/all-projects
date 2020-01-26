@@ -1,0 +1,48 @@
+.img-main-logo {
+  width: 160px;
+  text-align: center;
+}
+.img__sz-sm--fixed {
+  width: 120px;
+}
+.image-cooking {
+  width: 100%;
+}
+/* Images for collage */
+
+.collage-image {
+  border: 1px solid white;
+  width: 100%;
+}
+.image1 {
+  grid-column: 6 / 10;
+  grid-row: 1;
+}
+.image2 {
+  grid-column: 2 / 6;
+  grid-row: 2;
+}
+.image3 {
+  grid-column: 5 / 9;
+  grid-row: 5;
+}
+.image4 {
+  grid-column: 3 / 5;
+  grid-row: 6;
+}
+.image5 {
+  grid-column: 5 / 2;
+  grid-row: 8;
+}
+.image6 {
+  grid-column: 7 / 10;
+  grid-row: 9;
+}
+.image7 {
+  grid-column: 4 / 7;
+  grid-row: 10;
+}
+.image8 {
+  grid-column: 4 / 7;
+  grid-row: 10;
+}

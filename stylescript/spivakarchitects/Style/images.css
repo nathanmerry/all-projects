@@ -1,0 +1,23 @@
+.header-image {
+  width: 52vw;
+  max-width: 300px;
+}
+
+.image-large {
+  width: 100%;
+}
+
+.image-atical-external-link {
+  width: 12px;
+  opacity: 0.6;
+}
+
+.article-image {
+  width: 33%;
+}
+
+@media screen and (min-width: 767px) {
+  .article-image {
+    display: none;
+  }
+}

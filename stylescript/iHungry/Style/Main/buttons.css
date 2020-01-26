@@ -1,0 +1,15 @@
+.btn-s-m {
+  border-radius: 7px;
+  padding: 5px 20px;
+}
+.btn-t-clear {
+  border: 1px solid #cca353;
+  background: none;
+  color: #cca353;
+  font-weight: bold;
+}
+.btn-t-solid {
+  border: none;
+  background: #cca353;
+  color: white;
+}

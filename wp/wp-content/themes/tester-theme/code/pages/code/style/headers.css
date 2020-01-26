@@ -1,0 +1,18 @@
+.h_artical {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.h_artical--card {
+  border-bottom: 1px solid #0000002e;
+  color: #f06626;
+}
+
+.h_alone {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.h_contact_item {
+  font-size: 0.8em
+}

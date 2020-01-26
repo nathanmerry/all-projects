@@ -1,0 +1,110 @@
+x = 0;
+y = 3;
+
+// console.log("x = " + x);
+// console.log("y = " + y);
+
+const leftArrow = document.getElementById("slideArrowLeft");
+const rightArrow = document.getElementById("slideArrowRight");
+
+const testimonials = {
+  test1: document.getElementById("testimonial1"),
+  test2: document.getElementById("testimonial2"),
+  test3: document.getElementById("testimonial3"),
+  test4: document.getElementById("testimonial4"),
+  test5: document.getElementById("testimonial5"),
+  test6: document.getElementById("testimonial6"),
+  test7: document.getElementById("testimonial7"),
+  test8: document.getElementById("testimonial8"),
+  test9: document.getElementById("testimonial9")
+};
+
+let testimonialsArr = Object.values(testimonials);
+
+const slideRight = () => {
+  if (x === 0) {
+    x = x + 3;
+    y = y + 3;
+  } else if (x > 0 && y < testimonialsArr.length) {
+    x = x + 3;
+    y = y + 3;
+  } else {
+    x = 0;
+    y = 3;
+  }
+
+  testimonialsArr.map((item, index) => {
+    if (index < y && index > x - 1) {
+      switchClass(item, "active", "non-active");
+    } else {
+      switchClass(item, "non-active", "active");
+    }
+  });
+};
+
+const slideLeft = () => {
+  if (x === 0) {
+    x = testimonialsArr.length - 3;
+    y = testimonialsArr.length;
+  } else if (x < 0 && y > testimonialsArr.length) {
+    x = x - 3;
+    y = y - 3;
+  } else {
+    x = x - 3;
+    y = y - 3;
+  }
+
+  testimonialsArr.map((item, index) => {
+    if (index < y && index > x - 1) {
+      switchClass(item, "active", "non-active");
+    } else {
+      switchClass(item, "non-active", "active");
+    }
+  });
+};
+
+const circleSlide = circNum => {
+  let x = circNum * 3;
+  let y = x + 3;
+
+  testimonialsArr.map((item, index) => {
+    if (index < y && index > x - 1) {
+      switchClass(item, "active", "non-active");
+    } else {
+      switchClass(item, "non-active", "active");
+    }
+  });
+};
+
+let slideIndex = 0;
+let m = 3;
+
+console.log("slideIndex = " + slideIndex);
+console.log("m = " + m);
+
+const changeSlide = (direction, columns) => {
+  if (slideIndex >= 0) {
+    slideIndex = direction * columns + slideIndex;
+    m = slideIndex + columns;
+  }
+  if (m > testimonialsArr.length) {
+    slideIndex = 0;
+    m = columns;
+  }
+  if (slideIndex === -columns) {
+    slideIndex = testimonialsArr.length - columns;
+    m = testimonialsArr.length;
+  }
+
+  return { slideIndex, m };
+};
+
+testimonialsArr.map((item, index) => {
+  if (index > slideIndex - 1 && index < m) {
+    console.log(index);
+    switchClass(item, "active", "non-active");
+  } else {
+    switchClass(item, "non-active", "active");
+  }
+});
+console.log("m = " + m);

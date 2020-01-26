@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.c-main__section {
+  padding: 3% 0;
+}
+.sticky {
+  position: sticky;
+  top: calc(20% - 3em);
+}
+.c-header-sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.c-nav {
+  padding: calc(1.7vw + 10px) 3vw;
+}
+.c-nav-list-item {
+  padding: 10px;
+}
+.c-nav-popup {
+  width: 100%;
+  margin: 0;
+  padding: 0 3%;
+  position: absolute;
+}
+.c-hero {
+  width: 70%;
+  padding: 8% 10%;
+}
+.c-col__sz-s {
+  width: 200px;
+}
+.c-col__sz-l {
+  padding: 30px 20%;
+}
+.c-col {
+  width: 100%;
+}
+.c-col__item {
+  width: 100%;
+  padding: 20px;
+}
+.c-collage-image {
+  overflow: hidden;
+  z-index: 1;
+  height: 500px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .c-hero {
+    width: 90%;
+  }
+  .c-col__sz-l {
+    padding: 30px 10%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 20px;
+  }
+  .c-hero {
+    width: 100%;
+  }
+  .c-col__sz-s {
+    width: 100%;
+    padding: 0 30px;
+  }
+}

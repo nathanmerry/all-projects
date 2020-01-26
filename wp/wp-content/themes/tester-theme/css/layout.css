@@ -1,0 +1,143 @@
+.l_nav {
+  display: flex;
+}
+
+.l_header_row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.l_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l_row--mob {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.l_row--tbl {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.l_news-card {
+  display: grid;
+  grid-template-columns: 2fr 50%;
+  grid-column-gap: 4%;
+}
+
+.l_gd--col-2 {
+  display: grid;
+  grid-template-columns: 2fr 50%;
+  grid-column-gap: 4%;
+}
+
+.l_news-card_header {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.l_news-card_media {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.l_news-card_description {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.l_news-card_header--right {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.l_news-card_description--right {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.l_news-card_media--right {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.l_countdown-item {
+  align-content: center;
+  align-items: baseline;
+}
+
+.l_countdown-item_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l_contact_item {
+  display: flex;
+  align-items: center;
+}
+
+.l_contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .l_nav {
+    flex-direction: column;
+  }
+
+  .l_row--tbl {
+    flex-direction: column;
+  }
+
+  .l_news-card_header {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .l_news-card_media {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .l_news-card_description {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .l_news-card_header--right {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .l_news-card_description--right {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .l_news-card_media--right {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .l_countdown--inner {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .l_row--mob {
+    flex-direction: column;
+  }
+
+  .l_countdown--outer {
+    flex-direction: column;
+  }
+}
